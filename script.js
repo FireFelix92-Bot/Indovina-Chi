@@ -1,6 +1,6 @@
 // Elenco personaggi: metti i tuoi file nella cartella /img
 const CHARACTERS = [
-  { name: "Blueberrini Octopussini", img: "img/299px-6CgsqyyvS04uz_2kDIvaoi4pT8ZNExnFQmnsDIJNnMncO33W7SlPE-6-XOxwVZVe8tXlV1nono8Y2RSxuQ6eq1LA3HWsDBqeAth8jcryA0ejU4FJZv7f9ZazWyo6TZsSFl-cHVFGh8uBNfvApnrvtg" },
+  { name: "Blueberrini Octopussini", img: "Immagini/299px-6CgsqyyvS04uz_2kDIvaoi4pT8ZNExnFQmnsDIJNnMncO33W7SlPE-6-XOxwVZVe8tXlV1nono8Y2RSxuQ6eq1LA3HWsDBqeAth8jcryA0ejU4FJZv7f9ZazWyo6TZsSFl-cHVFGh8uBNfvApnrvtg" },
   { name: "Trallallero Trallallà",    img: "img/trallallero_trallallà.png" },
   { name: "Sigma",      img: "img/sigma.jpg" },
   // ⬆️ aggiungi/rimuovi qui (nome e percorso immagine)
