@@ -1,8 +1,8 @@
 // Elenco personaggi: metti i tuoi file nella cartella /img
 const CHARACTERS = [
-  { name: "Scimpanzini Bananini",    img: "img/Scimpanzini Bananini.png" },
-  { name: "Trallallero Trallallà",    img: "img/trallallero_trallallà.png" },
-  { name: "Sigma",      img: "img/sigma.jpg" },
+  { name: "Frigo Camelo",    img: "img/Frigo Camelo.jpg" },
+  { name: "Los Trallalleritos",    img: "img/Los Trallalleritos.jpg" },
+  { name: "Sigma Boy",      img: "img/Sigma Boy.jpg" },
   // ⬆️ aggiungi/rimuovi qui (nome e percorso immagine)
 ];
 
