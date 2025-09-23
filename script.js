@@ -12,7 +12,7 @@ const CHARACTERS = [
   { name: "Cappuccino Assassino",      img: "img/Cappuccino Assassino.jpg" },
   { name: "Chimpanzini Bananini",      img: "img/Chimpanzini Bananini.webp" },
   { name: "Cocofanto Elefanto",      img: "img/Cocofanto Elefanto.webp" },
-  { name: "Crocodildo Panisini",      img: "img/Crocodildo Penisini.webp" },
+  { name: "Crocodildo Penisini",      img: "img/Crocodildo Penisini.webp" },
   { name: "Frulli Frulla",      img: "img/Frulli Frulla.jpg" },
   { name: "Giraffa Celeste",      img: "img/Giraffa Celeste.jpg" },
   { name: "Glorbo Fruttodrillo",      img: "img/Glorbo Fruttodrillo.jpg" },
@@ -30,6 +30,13 @@ const CHARACTERS = [
   { name: "Trippi Troppi",      img: "img/Trippi Troppi.webp" },
   { name: "Tung Tung Tung Sahur",      img: "img/Tung Tung Tung Sahur.webp" },
   { name: "Udin din dun",      img: "img/Udin din dun.jpg" },
+  { name: "67",      img: "img/67.webp" },
+  { name: "Burbaloni Luliloli",      img: "img/Burbaloni Luliloli.webp" },
+  { name: "Cacto Hippopotamo",      img: "img/Cacto Hippopotamo.jpg" },
+  { name: "Karkerkar Kurkur",      img: "img/Karkerkar Kurkur.webp" },
+  { name: "Orcalero Orcalà",      img: "img/Orcalero Orcala.jpg" },
+  { name: "Piccione Macchina",      img: "img/Piccione Macchina.webp" },
+  { name: "Tipitopitaco",      img: "img/Tipitopitaco.jpg" },
   // ⬆️ aggiungi/rimuovi qui (nome e percorso immagine)
 ];
 
