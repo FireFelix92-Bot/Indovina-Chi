@@ -2,10 +2,23 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <title>Indovina Chi – Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Indovina Chi – Brainrot</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Funziona! 🎉</h1>
-  <p>Adesso puoi sostituire questo file con il tuo gioco.</p>
+  <header class="topbar">
+    <h1>Indovina Chi – Brainrot</h1>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Cerca…" />
+      <button id="shuffle" type="button">Mescola</button>
+      <button id="reset" type="button">Reset</button>
+      <label><input id="toggle-names" type="checkbox" /> Nascondi nomi</label>
+    </div>
+  </header>
+
+  <main><div id="grid" class="grid" aria-live="polite"></div></main>
+  <footer class="foot"><small>Click = oscura / Riclick = ripristina</small></footer>
+  <script src="script.js"></script>
 </body>
 </html>
