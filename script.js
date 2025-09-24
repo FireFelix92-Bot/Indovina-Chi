@@ -38,7 +38,6 @@ const CHARACTERS = [
   { name: "Piccione Macchina",      img: "img/Piccione Macchina.webp" },
   { name: "Tipitopitaco",      img: "img/Tipitopitaco.jpg" },
   { name: "Avocadini Guffo",      img: "img/Avocadini Guffo.webp" },
-  { name: "Balena Antenna",      img: "img/Balena Antenna.webp" },
   { name: "Ballerino Lololo",      img: "img/Ballerino Lololo.jpg" },
   { name: "Bombombini Gusini",      img: "img/Bombombini Gusini.webp" },
   { name: "Brr Brr Patapim",      img: "img/Brr Brr Patapim.jpg" },
