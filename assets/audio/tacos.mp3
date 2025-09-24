@@ -1,1 +1,4 @@
 ID3
+git add .
+git commit -m "tacos.mp3"
+git push
