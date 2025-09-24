@@ -108,18 +108,20 @@ shuffleBtn.addEventListener("click", () => {
 toggleNames.addEventListener("change", () => document.body.classList.toggle("hide-names", toggleNames.checked));
 
 render();
-// 🎵 Gestione play/pause musica
+
+// Elementi audio e bottone
 const playBtn = document.getElementById("playBtn");
 const audio = document.getElementById("bg-music");
 
-// volume iniziale (0.0 - 1.0)
+// Volume iniziale
 audio.volume = 1.0;
 
-playBtn.addEventListener("click", async function () {
+// Gestione play/pausa
+playBtn.addEventListener("click", async () => {
   try {
     if (audio.paused) {
       await audio.play();
-      playBtn.textContent = "⏸ Pausa Musica";
+      playBtn.textContent = "⏸️ Pausa Musica";
       playBtn.setAttribute("aria-pressed", "true");
       console.log("Audio in riproduzione");
     } else {
