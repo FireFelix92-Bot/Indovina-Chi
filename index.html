@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Indovina Chi - Brainrot</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -22,20 +22,21 @@
   </main>
 
   <footer class="foot">
-    <small>Click = oscura / Riclick = ripristina</small>
+    <small>Click = oscura / RClick = ripristina</small>
   </footer>
 
   <!-- 🎵 Audio di sottofondo -->
-  <audio id="bg-music" loop>
+  <audio id="bg-music" loop preload="auto">
     <source src="assets/audio/tacos.mp3" type="audio/mpeg">
     Il tuo browser non supporta l'audio HTML5.
   </audio>
 
-  <!-- Bottone per far partire la musica -->
+  <!-- 🔘 Bottone play/pause -->
   <div style="text-align:center; margin-top:1em;">
-    <button id="playBtn">🎵 Avvia Musica</button>
+    <button id="playBtn" aria-pressed="false">▶️ Avvia Musica</button>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
