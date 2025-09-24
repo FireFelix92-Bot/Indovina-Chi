@@ -51,6 +51,16 @@ const CHARACTERS = [
   { name: "Pussini Sushini",      img: "img/Pussini Sushini.webp" },
   { name: "Strawberrini Elefantini",      img: "img/Strawberrini Elefantini.jpg" },
   { name: "Svinino Bombondino",      img: "img/Svinino Bombondino.webp" },
+  { name: "Avocadini Octopussini",      img: "img/Avocadini Octopussini.jpg" },
+  { name: "Bantalero Bobo'o",      img: "img/Bantalero Boboo.jpg" },
+  { name: "Bum Bum Dragolo",      img: "img/Bum Bum Dragolo.jpg" },  
+  { name: "Cacasito Satalito",      img: "img/Cacasito Satalito.jpg" },  
+  { name: "Elefante Frigorifero",      img: "img/Elefante Frigorifero.webp" },
+  { name: "Gatto Ventilatorino",      img: "img/Gatto Ventilatorino.webp" }, 
+  { name: "Justin Beaver",      img: "img/Justin Beaver.webp" }, 
+  { name: "Los Dragolitos",      img: "img/Los Dragolitos.webp" }, 
+  { name: "Margheriti Octopussini",      img: "img/Margheriti Octopussini.jpg" }, 
+  { name: "Squalito Formaggiosito",      img: "img/Squalito Formaggiosito.webp" }, 
   // ⬆️ aggiungi/rimuovi qui (nome e percorso immagine)
 ];
 
