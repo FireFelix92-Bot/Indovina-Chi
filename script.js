@@ -108,3 +108,14 @@ shuffleBtn.addEventListener("click", () => {
 toggleNames.addEventListener("change", () => document.body.classList.toggle("hide-names", toggleNames.checked));
 
 render();
+
+document.getElementById("playBtn").addEventListener("click", function() {
+  let audio = document.getElementById("bg-music");
+  if (audio.paused) {
+    audio.play().catch(err => console.log("Errore play():", err));
+    this.textContent = "⏸️ Pausa Musica";
+  } else {
+    audio.pause();
+    this.textContent = "🎵 Avvia Musica";
+  }
+});
