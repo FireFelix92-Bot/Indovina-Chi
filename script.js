@@ -45,12 +45,12 @@ const CHARACTERS = [
   { name: "Chicleteira Bicicleteira",      img: "img/Chicleteira Bicicleteira.webp" },
   { name: "Dinosaurino Bananino",      img: "img/Dinosaurino Bananino.jpg" },
   { name: "Job Job Job Sahur",      img: "img/Job job job Sahur.webp" },
-  { name: "La Chucaracha",      img: "img/La Chucaracha.webp" },
+  { name: "La Cucaracha",      img: "img/La Cucaracha.webp" },
   { name: "Las Trallalleritas",      img: "img/Las Trallalleritas.jpg" },
   { name: "Las Vaquitas Saturnitas",      img: "img/Las Vaquitas Saturnitas.jpg" },
-  { name: "Pot Hotspot",      img: "img/Pot hotspot.jpg" },
+  { name: "Pot Hotspot",      img: "img/Pot hotspost.jpg" },
   { name: "Pussini Sushini",      img: "img/Pussini Sushini.webp" },
-  { name: "Strawberrini Elefantini",      img: "img/Strawberrini Elefantini.webp" },
+  { name: "Strawberrini Elefantini",      img: "img/Strawberrini Elefantini.jpg" },
   { name: "Svinino Bombondino",      img: "img/Svinino Bombondino.webp" },
   // ⬆️ aggiungi/rimuovi qui (nome e percorso immagine)
 ];
