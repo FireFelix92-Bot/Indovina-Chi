@@ -109,29 +109,29 @@ toggleNames.addEventListener("change", () => document.body.classList.toggle("hid
 
 render();
 
-// Elementi audio e bottone
+// 🎵 Gestione play/pausa musica
 const playBtn = document.getElementById("playBtn");
 const audio = document.getElementById("bg-music");
 
-// Volume iniziale
+// volume iniziale (0.0 - 1.0)
 audio.volume = 1.0;
 
-// Gestione play/pausa
-playBtn.addEventListener("click", async () => {
-  try {
-    if (audio.paused) {
-      await audio.play();
-      playBtn.textContent = "⏸️ Pausa Musica";
-      playBtn.setAttribute("aria-pressed", "true");
-      console.log("Audio in riproduzione");
-    } else {
-      audio.pause();
-      playBtn.textContent = "▶️ Avvia Musica";
-      playBtn.setAttribute("aria-pressed", "false");
-      console.log("Audio in pausa");
-    }
-  } catch (err) {
-    console.error("Errore durante il play():", err);
-    alert("Errore audio: " + (err && err.message ? err.message : err));
+playBtn.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.play()
+      .then(() => {
+        playBtn.textContent = "⏸️ Pausa Musica";
+        playBtn.setAttribute("aria-pressed", "true");
+        console.log("Audio in riproduzione");
+      })
+      .catch(err => {
+        console.error("Errore durante il play():", err);
+        alert("Errore audio: " + (err && err.message ? err.message : err));
+      });
+  } else {
+    audio.pause();
+    playBtn.textContent = "▶️ Avvia Musica";
+    playBtn.setAttribute("aria-pressed", "false");
+    console.log("Audio in pausa");
   }
 });
