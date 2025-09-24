@@ -37,6 +37,21 @@ const CHARACTERS = [
   { name: "Orcalero Orcalà",      img: "img/Orcalero Orcala.jpg" },
   { name: "Piccione Macchina",      img: "img/Piccione Macchina.webp" },
   { name: "Tipitopitaco",      img: "img/Tipitopitaco.jpg" },
+  { name: "Avocadini Guffo",      img: "img/Avocadini Guffo.webp" },
+  { name: "Balena Antenna",      img: "img/Balena Antenna.webp" },
+  { name: "Ballerino Lololo",      img: "img/Ballerino Lololo.jpg" },
+  { name: "Bombombini Gusini",      img: "img/Bombombini Gusini.webp" },
+  { name: "Brr Brr Patapim",      img: "img/Brr Brr Patapim.jpg" },
+  { name: "Chicleteira Bicicleteira",      img: "img/Chicleteira Bicicleteira.webp" },
+  { name: "Dinosaurino Bananino",      img: "img/Dinosaurino Bananino.jpg" },
+  { name: "Job Job Job Sahur",      img: "img/Job job job Sahur.webp" },
+  { name: "La Chucaracha",      img: "img/La Chucaracha.webp" },
+  { name: "Las Trallalleritas",      img: "img/Las Trallalleritas.jpg" },
+  { name: "Las Vaquitas Saturnitas",      img: "img/Las Vaquitas Saturnitas.jpg" },
+  { name: "Pot Hotspot",      img: "img/Pot hotspot.jpg" },
+  { name: "Pussini Sushini",      img: "img/Pussini Sushini.webp" },
+  { name: "Strawberrini Elefantini",      img: "img/Strawberrini Elefantini.webp" },
+  { name: "Svinino Bombondino",      img: "img/Svinino Bombondino.webp" },
   // ⬆️ aggiungi/rimuovi qui (nome e percorso immagine)
 ];
 
