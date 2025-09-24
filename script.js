@@ -108,14 +108,17 @@ shuffleBtn.addEventListener("click", () => {
 toggleNames.addEventListener("change", () => document.body.classList.toggle("hide-names", toggleNames.checked));
 
 render();
-
-document.getElementById("playBtn").addEventListener("click", function() {
+document.getElementById("playBtn").addEventListener("click", async function() {
   let audio = document.getElementById("bg-music");
-  if (audio.paused) {
-    audio.play().catch(err => console.log("Errore play():", err));
+  audio.volume = 1.0; // volume massimo
+  console.log("Audio paused?", audio.paused);
+
+  try {
+    await audio.play();
+    console.log("Audio sta suonando!");
     this.textContent = "⏸️ Pausa Musica";
-  } else {
-    audio.pause();
-    this.textContent = "🎵 Avvia Musica";
+  } catch (err) {
+    console.error("Errore durante il play():", err);
+    alert("Errore: " + err.message);
   }
 });
