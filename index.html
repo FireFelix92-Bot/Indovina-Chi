@@ -21,8 +21,27 @@
   <footer class="foot"><small>Click = oscura / Riclick = ripristina</small></footer>
   <script src="script.js"></script>
 </body>
-  <audio autoplay loop hidden>
-  <source src="assets/audio/musica.mp3" type="audio/mpeg">
-  Il tuo browser non supporta l'audio HTML5.
-</audio>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina con Musica</title>
+</head>
+<body>
+    <!-- Tutto il contenuto visibile della pagina va qui -->
+    <button onclick="playAudio()">Avvia Musica</button>
+
+    <audio id="bg-music" loop>
+        <source src="assets/audio/tacos.mp3" type="audio/mpeg">
+        Il tuo browser non supporta l'audio HTML5.
+    </audio>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('bg-music');
+            audio.play();
+        }
+    </script>
+</body>
 </html>
