@@ -61,7 +61,20 @@ const CHARACTERS = [
   { name: "Los Dragolitos",      img: "img/Los Dragolitos.webp" }, 
   { name: "Margheriti Octopussini",      img: "img/Margheriti Octopussini.jpg" }, 
   { name: "Squalito Formaggiosito",      img: "img/Squalito Formaggiosito.webp" },
-  { name: "",      img: "img/" },
+  { name: "Alessio",      img: "img/Alessio.jpeg" },
+  { name: "Carloo",      img: "img/Carloo.jpg" },
+  { name: "Cocosini Mama",      img: "img/Cocosini Mama.webp" },
+  { name: "Gattatino Nyanino",      img: "img/Gattatino Nyanino.webp" },
+  { name: "Los Bombinitos",      img: "img/Los Bombinitos.jpg" },
+  { name: "Los Crocodilitos",      img: "img/Los Crocodilitos.jpg" },
+  { name: "Los Orcalitos",      img: "img/Los Orcalitos.webp" },
+  { name: "No My HotSpot",      img: "img/No My HotSpot" },
+  { name: "Pakrahmatmamat",      img: "img/Pakrahmatmamat.jpeg" },
+  { name: "Penguino Cocosino",      img: "img/Penguino Cocosino.jpg" },
+  { name: "Tob Tobi Tob",      img: "img/Tob Tobi Tob.webp" },
+  { name: "Tractoro Dinosauro",      img: "img/Tractoro Dinosauro.webp" },
+  { name: "Tralalita Tralala",      img: "img/Tralalita Tralala.webp" },
+  { name: "Tukanno Bananno",      img: "img/Tukanno Bananno.webp" },
   // ⬆️ aggiungi/rimuovi qui (nome e percorso immagine)
 ];
 
