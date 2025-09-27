@@ -84,6 +84,7 @@ const CHARACTERS = [
   { name: "Torrtughinni Dragonfrutinni",      img: "img/Torrtughinni Dragonfrutinni.webp" },
   { name: "Spaghetti Tualetti",      img: "img/Spaghetti Tualetti.jpg" },
   { name: "Tralaldeon",      img: "img/Tralaledon.webp" },
+  { name: "Noobini Pizzanini",      img: "img/Noobini Pizzanini.jpg" },
   // ⬆️ aggiungi/rimuovi qui (nome e percorso immagine)
 ];
 
