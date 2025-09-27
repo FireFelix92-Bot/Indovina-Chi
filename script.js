@@ -60,7 +60,8 @@ const CHARACTERS = [
   { name: "Justin Beaver",      img: "img/Justin Beaver.webp" }, 
   { name: "Los Dragolitos",      img: "img/Los Dragolitos.webp" }, 
   { name: "Margheriti Octopussini",      img: "img/Margheriti Octopussini.jpg" }, 
-  { name: "Squalito Formaggiosito",      img: "img/Squalito Formaggiosito.webp" }, 
+  { name: "Squalito Formaggiosito",      img: "img/Squalito Formaggiosito.webp" },
+  { name: "",      img: "img/" },
   // ⬆️ aggiungi/rimuovi qui (nome e percorso immagine)
 ];
 
