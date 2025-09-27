@@ -68,12 +68,12 @@ const CHARACTERS = [
   { name: "Los Bombinitos",      img: "img/Los Bombinitos.jpg" },
   { name: "Los Crocodilitos",      img: "img/Los Crocodilitos.jpg" },
   { name: "Los Orcalitos",      img: "img/Los Orcalitos.webp" },
-  { name: "No My HotSpot",      img: "img/No My HotSpot" },
+  { name: "No My HotSpot",      img: "img/No My HotSpot.jpg" },
   { name: "Pakrahmatmamat",      img: "img/Pakrahmatmamat.jpeg" },
   { name: "Penguino Cocosino",      img: "img/Penguino Cocosino.jpg" },
   { name: "Tob Tobi Tob",      img: "img/Tob Tobi Tob.webp" },
   { name: "Tractoro Dinosauro",      img: "img/Tractoro Dinosauro.webp" },
-  { name: "Tralalita Tralala",      img: "img/Tralalita Tralala.webp" },
+  { name: "Tralalita Tralala",      img: "img/Tralalita Tralala.jpg" },
   { name: "Tukanno Bananno",      img: "img/Tukanno Bananno.webp" },
   // ⬆️ aggiungi/rimuovi qui (nome e percorso immagine)
 ];
