@@ -64,7 +64,6 @@ const CHARACTERS = [
   { name: "Alessio",      img: "img/Alessio.jpeg" },
   { name: "Carloo",      img: "img/Carloo.jpg" },
   { name: "Cocosini Mama",      img: "img/Cocosini Mama.webp" },
-  { name: "Gattatino Nyanino",      img: "img/Gattatino Nyanino.webp" },
   { name: "Los Bombinitos",      img: "img/Los Bombinitos.jpg" },
   { name: "Los Crocodilitos",      img: "img/Los Crocodilitos.jpg" },
   { name: "Los Orcalitos",      img: "img/Los Orcalitos.webp" },
