@@ -75,6 +75,16 @@ const CHARACTERS = [
   { name: "Tractoro Dinosauro",      img: "img/Tractoro Dinosauro.webp" },
   { name: "Tralalita Tralala",      img: "img/Tralalita Tralala.jpg" },
   { name: "Tukanno Bananno",      img: "img/Tukanno Bananno.webp" },
+  { name: "Agarrini la Palini",      img: "img/Agarrini la Palini.jpg" },
+  { name: "BlackHole Goat",      img: "img/BlackHole Goat.webp" },
+  { name: "Esok Sekolah",      img: "img/Esok Sekolah.webp" },
+  { name: "Ketupat Kepat",      img: "img/Ketupat Kepat.webp" },
+  { name: "Los Torrtughinni Dragonfrutinni",      img: "img/Los Torrtughinni Drafonfrutinni.jpg" },
+  { name: "Nuclearo Dinossauro",      img: "img/Nuclearo Dinossauro.webp" },
+  { name: "Quesadilla Crocodila",      img: "img/Quesadilla Crocodila.webp" }, 
+  { name: "Torrtughinni Dragonfrutinni",      img: "img/Torrtughinni Dragonfrutinni.webp" },
+  { name: "Spaghetti Tualetti",      img: "img/Spaghetti Tualetti.jpg" },
+  { name: "Tralaldeon",      img: "img/Tralaledon.webp" },
   // ⬆️ aggiungi/rimuovi qui (nome e percorso immagine)
 ];
 
