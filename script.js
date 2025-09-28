@@ -84,12 +84,10 @@ const CHARACTERS = [
   { name: "Tarturga Cisterna",    img: "img/Tarturga Cisterna.jpg" }
 ];
 
-// Salvataggio off
 const STORAGE_KEY = "brainrot-guesswho:off";
 const loadOff = () => new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]"));
 const saveOff = s => localStorage.setItem(STORAGE_KEY, JSON.stringify([...s]));
 
-// Riferimenti DOM
 const grid = document.getElementById("grid");
 const search = document.getElementById("search");
 const resetBtn = document.getElementById("reset");
@@ -99,7 +97,6 @@ const toggleNames = document.getElementById("toggle-names");
 let off = loadOff();
 let data = [...CHARACTERS];
 
-// Render personaggi
 function render(list = data) {
   grid.innerHTML = "";
   const q = (search.value || "").toLowerCase().trim();
