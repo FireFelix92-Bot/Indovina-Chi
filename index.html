@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
@@ -8,7 +9,11 @@
 </head>
 <body>
 
-  <audio id="bgMusic" src="musica/musica.mp3" loop></audio>
+
+
+<audio id="bgMusic" src="musica/musica.mp3" loop></audio>
+
+
 
   <header class="topbar">
     <h1>Indovina Chi - Brainrot</h1>
@@ -20,28 +25,29 @@
     </div>
   </header>
 
+
+
   <main>
     <div id="grid" class="grid" aria-live="polite"></div>
   </main>
+
+
 
   <footer class="foot">
     <small>Click = oscura / RClic = ripristina</small>
   </footer>
 
 
+
   <script src="script.js"></script>
+
 
 
   <script>
     const bgMusic = document.getElementById("bgMusic");
-
-    document.addEventListener("click", () => {
-      if (bgMusic.paused) {
-        bgMusic.volume = 0.3;
-        bgMusic.play().catch(err => console.error("Errore nel play:", err));
-      }
-    }, { once: true });
+    bgMusic.volume = 0.3; 
+    bgMusic.play().catch(err => console.error("Errore nel play:", err));
   </script>
+
 </body>
 </html>
-
