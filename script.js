@@ -93,10 +93,10 @@ const grid = document.getElementById("grid");
 const search = document.getElementById("search");
 const resetBtn = document.getElementById("reset");
 const shuffleBtn = document.getElementById("shuffle");
-const toggleNames = document.getElementById("toggle-names");
+const toggleNames = document.getElementById("toggele-names");
 
 let off = loadOff();
-let data = [...CHARACTERS];
+let data = [...CHARACTERS]; 
 
 function render(list = data) {
   grid.innerHTML = "";
@@ -120,6 +120,7 @@ function render(list = data) {
     label.textContent = name;
 
     btn.append(image, label);
+
     if (off.has(name)) btn.classList.add("off");
     btn.addEventListener("click", () => {
       const isOff = btn.classList.toggle("off");
@@ -134,7 +135,12 @@ function render(list = data) {
 }
 
 search.addEventListener("input", render);
-resetBtn.addEventListener("click", () => { off = new Set(); saveOff(off); search.value = ""; render(); });
+resetBtn.addEventListener("click", () => {
+  off = new Set();
+  saveOff(off);
+  search.value = "";
+  render();
+});
 shuffleBtn.addEventListener("click", () => {
   for (let i = data.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -142,29 +148,8 @@ shuffleBtn.addEventListener("click", () => {
   }
   render();
 });
-toggleNames.addEventListener("change", () => document.body.classList.toggle("hide-names", toggleNames.checked));
-
-render();
-
-const bgMusic = document.getElementById("bgMusic");
-const toggleBtn = document.getElementById("toggleMusic");
-
-// volume e no mute
-bgMusic.volume = 1.0;
-bgMusic.muted = false;
-
-toggleBtn.addEventListener("click", () => {
-    if (bgMusic.paused) {
-        bgMusic.play()
-            .then(() => {
-                toggleBtn.textContent = "🔇 Disattiva Musica";
-            })
-            .catch(err => {
-                console.error("Errore nel play:", err);
-            });
-    } else {
-        bgMusic.pause();
-        toggleBtn.textContent = "🎵 Attiva Musica";
-    }
+toggleNames.addEventListener("change", () => {
+  document.body.classList.toggle("hide-names", toggleNames.checked);
 });
 
+render();
