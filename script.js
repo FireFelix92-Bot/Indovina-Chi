@@ -6,13 +6,13 @@ const CHARACTERS = [
   { name: "Ballerina Cappuccina", img: "img/Ballerina Cappuccina.webp" },
   { name: "Bandito Bobrito", img: "img/Bandito Bobrito.jpg" },
   { name: "Blueberrini Octopusini", img: "img/Blueberrini Octopusini.webp" },
-  { name: "Bombardino Crocodilo", img: "img/Bombardino Crocodilo.jpg" },
+  { name: "Bombardino Crocodillo", img: "img/Bombardino Crocodillo.jpg" },
   { name: "Boneca Ambalabu", img: "img/Boneca Ambalabu.webp" },
   { name: "Cannelloni Dragoni", img: "img/Cannelloni Dragoni.jpg" },
   { name: "Cappuccino Assassino", img: "img/Cappuccino Assassino.jpg" },
   { name: "Chimpanzini Bananini", img: "img/Chimpanzini Bananini.webp" },
   { name: "Cocofanto Elefanto", img: "img/Cocofanto Elefanto.webp" },
-  { name: "Crocodilo Penisini", img: "img/Crocodilo Penisini.webp" },
+  { name: "Crocodillo Penisini", img: "img/Crocodillo Penisini.webp" },
   { name: "Frulli Frulla", img: "img/Frulli Frulla.jpg" },
   { name: "Giraffa Celeste", img: "img/Giraffa Celeste.jpg" },
   { name: "Glorbo Frutordillo", img: "img/Glorbo Frutordillo.jpg" },
@@ -83,6 +83,8 @@ const CHARACTERS = [
   { name: "Noobini Pizzarini", img: "img/Noobini Pizzarini.jpg" },
   { name: "Tarturga Cisterna", img: "img/Tarturga Cisterna.jpg" }
 ];
+```
+
 
 // Salvataggio off
 const STORAGE_KEY = "brainrot-guesswho:off";
