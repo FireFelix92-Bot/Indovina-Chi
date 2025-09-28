@@ -61,18 +61,19 @@
     const grid = document.getElementById("grid");
     const selectedBox = document.getElementById("selectedBox");
 
-    // Rendi tutte le immagini trascinabili quando vengono aggiunte alla griglia
-    const makeDraggable = () => {
+    // funzione per rendere draggable tutte le immagini
+    function makeImagesDraggable() {
       const imgs = grid.querySelectorAll("img");
       imgs.forEach(img => {
         img.setAttribute("draggable", "true");
+
         img.addEventListener("dragstart", (e) => {
           e.dataTransfer.setData("src", img.src);
         });
       });
-    };
+    }
 
-    // permetti drop nella casella
+    // abilito il drop nella casella
     selectedBox.addEventListener("dragover", (e) => {
       e.preventDefault();
     });
@@ -86,19 +87,19 @@
         newImg.src = src;
         selectedBox.appendChild(newImg);
 
-        // doppio click sulla casella → svuota
-        newImg.addEventListener("dblclick", () => {
+        // click sull’immagine → svuota
+        newImg.addEventListener("click", () => {
           selectedBox.innerHTML = "";
         });
       }
     });
 
-    // osserva il grid e applica draggable anche quando cambia
-    const observer = new MutationObserver(makeDraggable);
+    // osserva cambiamenti dentro grid e aggiorna
+    const observer = new MutationObserver(makeImagesDraggable);
     observer.observe(grid, { childList: true, subtree: true });
 
-    // inizializza al primo caricamento
-    makeDraggable();
+    // inizializzo subito
+    makeImagesDraggable();
   </script>
 </body>
 </html>
