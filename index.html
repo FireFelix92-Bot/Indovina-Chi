@@ -6,15 +6,15 @@
   <title>Indovina Chi - Brainrot</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* stile casella in alto a destra */
+    /* casella in alto a destra */
     .selected-box {
       position: fixed;
       top: 10px;
       right: 10px;
-      width: 150px;
-      height: 150px;
+      width: 80px;   /* più piccolo */
+      height: 80px;  /* più piccolo */
       border: 2px solid #fff;
-      border-radius: 10px;
+      border-radius: 8px;
       background: #222;
       display: flex;
       justify-content: center;
@@ -27,7 +27,7 @@
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
-      cursor: pointer; /* mostra che si può interagire */
+      cursor: pointer;
     }
   </style>
 </head>
@@ -53,20 +53,26 @@
     <small>Click = oscura / RClic = ripristina</small>
   </footer>
 
+  <!-- script principale -->
   <script src="script.js"></script>
+
+  <!-- script per gestire il doppio click -->
   <script>
-    // aggiungo gestione doppio click sulle carte
     const grid = document.getElementById("grid");
     const selectedBox = document.getElementById("selectedBox");
 
-    // quando vengono aggiunte immagini dentro la griglia
     grid.addEventListener("dblclick", (e) => {
-      if (e.target.tagName === "IMG") {
+      if (e.target && e.target.tagName === "IMG") {
+        console.log("Doppio click su:", e.target.src);
+
+        // pulisco la casella
         selectedBox.innerHTML = "";
+
+        // clono l'immagine e la inserisco nella casella
         const clone = e.target.cloneNode(true);
         selectedBox.appendChild(clone);
 
-        // doppio click sull'immagine della casella → svuota
+        // se fai doppio click sull'immagine della casella → svuota
         clone.addEventListener("dblclick", () => {
           selectedBox.innerHTML = "";
         });
