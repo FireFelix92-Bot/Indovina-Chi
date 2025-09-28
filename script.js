@@ -6,7 +6,7 @@ const CHARACTERS = [
   { name: "Ballerina Cappuccina", img: "img/Ballerina Cappuccina.webp" },
   { name: "Bandito Bobrito", img: "img/Bandito Bobrito.jpg" },
   { name: "Blueberrini Octopussini", img: "img/Blueberrini Octopussini.webp" },
-  { name: "Bombardino Coccodrillo", img: "img/Bombardino Coccodrillo.jpg" },
+  { name: "Bombardino Croccodillo", img: "img/Bombardino Croccodillo.jpg" },
   { name: "Boneca Ambalabu", img: "img/Boneca Ambalabu.webp" },
   { name: "Cannelloni Dragoni", img: "img/Cannelloni Dragoni.jpg" },
   { name: "Cappuccino Assassino", img: "img/Cappuccino Assassino.jpg" },
