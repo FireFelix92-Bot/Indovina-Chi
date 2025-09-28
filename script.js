@@ -146,16 +146,25 @@ toggleNames.addEventListener("change", () => document.body.classList.toggle("hid
 
 render();
 
-const music = document.getElementById("bgMusic");
-const toggleMusicBtn = document.getElementById("toggleMusic");
+const bgMusic = document.getElementById("bgMusic");
+const toggleBtn = document.getElementById("toggleMusic");
 
-toggleMusicBtn.addEventListener("click", () => {
-  if (music.muted) {
-    music.muted = false;
-    music.play();
-    toggleMusicBtn.textContent = "🔇 Disattiva Musica";
-  } else {
-    music.muted = true;
-    toggleMusicBtn.textContent = "🎵 Attiva Musica";
-  }
+// volume e no mute
+bgMusic.volume = 1.0;
+bgMusic.muted = false;
+
+toggleBtn.addEventListener("click", () => {
+    if (bgMusic.paused) {
+        bgMusic.play()
+            .then(() => {
+                toggleBtn.textContent = "🔇 Disattiva Musica";
+            })
+            .catch(err => {
+                console.error("Errore nel play:", err);
+            });
+    } else {
+        bgMusic.pause();
+        toggleBtn.textContent = "🎵 Attiva Musica";
+    }
 });
+
