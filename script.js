@@ -1,4 +1,3 @@
-```js
 // Elenco personaggi: metti i tuoi file nella cartella /img
 const CHARACTERS = [
   { name: "Frigo Camelo", img: "img/Frigo Camelo.jpg" },
