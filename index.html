@@ -5,22 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Indovina Chi - Brainrot</title>
   <link rel="stylesheet" href="style.css" />
-
-  <style>
-    .toolbar button {
-      background: #ff4081;
-      border: none;
-      padding: 6px 10px;
-      border-radius: 6px;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      margin-left: 4px;
-    }
-  </style>
 </head>
 <body>
+
   <audio id="bgMusic" src="musica/musica.mp3" loop></audio>
+
 
   <header class="topbar">
     <h1>Indovina Chi - Brainrot</h1>
@@ -28,41 +17,49 @@
       <input id="search" type="search" placeholder="Cerca..." />
       <button id="shuffle" type="button">Mescola</button>
       <button id="reset" type="button">Reset</button>
-      <label><input id="toggle-names" type="checkbox" /> Nascondi nomi</label>
-      <button id="toggleMusic">🎵 Attiva Musica</button>
+      <label>
+        <input id="toggle-names" type="checkbox" /> Nascondi nomi
+      </label>
+      <button id="toggleMusic" type="button">🎵 Attiva Musica</button>
     </div>
   </header>
+
 
   <main>
     <div id="grid" class="grid" aria-live="polite"></div>
   </main>
 
+
   <footer class="foot">
     <small>Click = oscura / RClic = ripristina</small>
   </footer>
 
+
   <script src="script.js"></script>
 
- <script>
-  const bgMusic = document.getElementById("bgMusic");
- bgMusic.volume = 1.0; 
-bgMusic.muted = false; 
-   
-  const toggleBtn = document.getElementById("toggleMusic");
 
-  toggleBtn.addEventListener("click", () => {
-    if (bgMusic.paused) {
-      bgMusic.play()
-        .then(() => {
-          toggleBtn.textContent = "🔇 Disattiva Musica";
-        })
-        .catch(err => {
-          console.log("Errore nel play:", err);
-        });
-    } else {
-      bgMusic.pause();
-      toggleBtn.textContent = "🎵 Attiva Musica";
-    }
-  });
-</script>
+  <script>
+    const bgMusic = document.getElementById("bgMusic");
+    const toggleBtn = document.getElementById("toggleMusic");
 
+
+    bgMusic.volume = 1.0;
+    bgMusic.muted = false;
+
+    toggleBtn.addEventListener("click", () => {
+      if (bgMusic.paused) {
+        bgMusic.play()
+          .then(() => {
+            toggleBtn.textContent = "🔇 Disattiva Musica";
+          })
+          .catch(err => {
+            console.error("Errore nel play:", err);
+          });
+      } else {
+        bgMusic.pause();
+        toggleBtn.textContent = "🎵 Attiva Musica";
+      }
+    });
+  </script>
+</body>
+</html>
