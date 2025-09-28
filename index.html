@@ -5,38 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Indovina Chi - Brainrot</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .selected-box {
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      width: 80px;
-      height: 80px;
-      border: 2px solid #fff;
-      border-radius: 8px;
-      background: #222;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      z-index: 1000;
-    }
-    .selected-box img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-      cursor: pointer;
-    }
-    .drag-preview {
-      position: absolute;
-      pointer-events: none;
-      max-width: 60px;
-      max-height: 60px;
-      opacity: 0.8;
-      border: 1px solid #fff;
-      border-radius: 4px;
-    }
-  </style>
 </head>
 <body>
   <header class="topbar">
@@ -49,8 +17,6 @@
     </div>
   </header>
 
-  <div class="selected-box" id="selectedBox"></div>
-
   <main>
     <div id="grid" class="grid" aria-live="polite"></div>
   </main>
@@ -60,57 +26,6 @@
   </footer>
 
   <script src="script.js"></script>
-
-  <script>
-    const grid = document.getElementById("grid");
-    const selectedBox = document.getElementById("selectedBox");
-
-    let dragImg = null;
-
-    grid.addEventListener("mousedown", (e) => {
-      if (e.target && e.target.tagName === "IMG") {
-        dragImg = document.createElement("img");
-        dragImg.src = e.target.src;
-        dragImg.className = "drag-preview";
-        document.body.appendChild(dragImg);
-        movePreview(e);
-      }
-    });
-
-    document.addEventListener("mousemove", (e) => {
-      if (dragImg) {
-        movePreview(e);
-      }
-    });
-
-    document.addEventListener("mouseup", (e) => {
-      if (dragImg) {
-        const boxRect = selectedBox.getBoundingClientRect();
-        if (
-          e.clientX >= boxRect.left &&
-          e.clientX <= boxRect.right &&
-          e.clientY >= boxRect.top &&
-          e.clientY <= boxRect.bottom
-        ) {
-          // rilasciato nella casella
-          selectedBox.innerHTML = "";
-          const newImg = document.createElement("img");
-          newImg.src = dragImg.src;
-          selectedBox.appendChild(newImg);
-          newImg.addEventListener("click", () => {
-            selectedBox.innerHTML = "";
-          });
-        }
-        dragImg.remove();
-        dragImg = null;
-      }
-    });
-
-    function movePreview(e) {
-      dragImg.style.left = e.pageX + 5 + "px";
-      dragImg.style.top = e.pageY + 5 + "px";
-    }
-  </script>
 </body>
 </html>
 ```
