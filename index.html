@@ -44,22 +44,23 @@
 
   <script src="script.js"></script>
 
-  <script>
-    const bgMusic = document.getElementById("bgMusic");
-    const toggleBtn = document.getElementById("toggleMusic");
+ <script>
+  const bgMusic = document.getElementById("bgMusic");
+  const toggleBtn = document.getElementById("toggleMusic");
 
-    toggleBtn.addEventListener("click", () => {
-      if (bgMusic.muted || bgMusic.paused) {
-        bgMusic.muted = false;
-        bgMusic.play();
-        toggleBtn.textContent = "🔇 Disattiva Musica";
-      } else {
-        bgMusic.muted = true;
-        toggleBtn.textContent = "🎵 Attiva Musica";
-      }
-    });
-  </script>
-</body>
-</html>
-```
+  toggleBtn.addEventListener("click", () => {
+    if (bgMusic.paused) {
+      bgMusic.play()
+        .then(() => {
+          toggleBtn.textContent = "🔇 Disattiva Musica";
+        })
+        .catch(err => {
+          console.log("Errore nel play:", err);
+        });
+    } else {
+      bgMusic.pause();
+      toggleBtn.textContent = "🎵 Attiva Musica";
+    }
+  });
+</script>
 
