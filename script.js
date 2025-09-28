@@ -74,7 +74,7 @@ const CHARACTERS = [
   { name: "BlackHole Goat", img: "img/BlackHole Goat.webp" },
   { name: "Esok Sekolah", img: "img/Esok Sekolah.webp" },
   { name: "Ketupat Kepat", img: "img/Ketupat Kepat.webp" },
-  { name: "Los Torrtughinni Dragonfrutinni", img: "img/Los Torrtughinni Drafonfrutini.jpg" },
+  { name: "Los Torrtughinni Dragonfrutinni", img: "img/Los Torrtughinni Drafonfrutinni.jpg" },
   { name: "Nuclearo Dinossauro", img: "img/Nuclearo Dinossauro.webp" },
   { name: "Quesadilla Crocodila", img: "img/Quesadilla Crocodila.webp" },
   { name: "Torrtughinni Dragonfrutinni", img: "img/Torrtughinni Dragonfrutinni.webp" },
