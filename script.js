@@ -145,3 +145,17 @@ shuffleBtn.addEventListener("click", () => {
 toggleNames.addEventListener("change", () => document.body.classList.toggle("hide-names", toggleNames.checked));
 
 render();
+
+const music = document.getElementById("bgMusic");
+const toggleMusicBtn = document.getElementById("toggleMusic");
+
+toggleMusicBtn.addEventListener("click", () => {
+  if (music.muted) {
+    music.muted = false;
+    music.play();
+    toggleMusicBtn.textContent = "🔇 Disattiva Musica";
+  } else {
+    music.muted = true;
+    toggleMusicBtn.textContent = "🎵 Attiva Musica";
+  }
+});
