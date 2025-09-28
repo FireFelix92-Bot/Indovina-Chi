@@ -88,6 +88,7 @@ const CHARACTERS = [
   { name: "Crostini Bambini", img: "img/Crostini Bambini.jpg" },
   { name: "Malame Amarele", img: "img/Malame Amarele.webp" },
   { name: "Trulimero Trulicina", img: "img/Trulimero Trulicina.jpg" },
+  { name: "Los Matteos", img: "img/Los Matteos.png" },
   // aggiungi/rimuovi qui (nome e percorso immagine)
 ];
 
