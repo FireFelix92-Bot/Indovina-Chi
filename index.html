@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Indovina Chi - Brainrot</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .music-control {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      z-index: 2000;
+    }
+  </style>
 </head>
 <body>
   <header class="topbar">
@@ -25,7 +33,31 @@
     <small>Click = oscura / RClic = ripristina</small>
   </footer>
 
+  <!-- Musica di sottofondo -->
+  <audio id="bgMusic" src="musica.mp3" loop autoplay muted></audio>
+
+  <!-- Pulsante di controllo -->
+  <div class="music-control">
+    <button id="toggleMusic">🎵 Attiva Musica</button>
+  </div>
+
   <script src="script.js"></script>
+
+  <script>
+    const bgMusic = document.getElementById("bgMusic");
+    const toggleBtn = document.getElementById("toggleMusic");
+
+    toggleBtn.addEventListener("click", () => {
+      if (bgMusic.muted || bgMusic.paused) {
+        bgMusic.muted = false;
+        bgMusic.play();
+        toggleBtn.textContent = "🔇 Disattiva Musica";
+      } else {
+        bgMusic.muted = true;
+        toggleBtn.textContent = "🎵 Attiva Musica";
+      }
+    });
+  </script>
 </body>
 </html>
 ```
