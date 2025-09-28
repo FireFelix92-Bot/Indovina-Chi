@@ -11,8 +11,8 @@
       position: fixed;
       top: 10px;
       right: 10px;
-      width: 80px;   /* più piccolo */
-      height: 80px;  /* più piccolo */
+      width: 80px;
+      height: 80px;
       border: 2px solid #fff;
       border-radius: 8px;
       background: #222;
@@ -56,24 +56,26 @@
   <!-- script principale -->
   <script src="script.js"></script>
 
-  <!-- script per gestire il doppio click -->
+  <!-- script per gestire click destro -->
   <script>
     const grid = document.getElementById("grid");
     const selectedBox = document.getElementById("selectedBox");
 
-    grid.addEventListener("dblclick", (e) => {
+    // click destro sulle immagini della griglia
+    grid.addEventListener("contextmenu", (e) => {
       if (e.target && e.target.tagName === "IMG") {
-        console.log("Doppio click su:", e.target.src);
+        e.preventDefault(); // evita il menu contestuale
 
         // pulisco la casella
         selectedBox.innerHTML = "";
 
-        // clono l'immagine e la inserisco nella casella
+        // clono l'immagine e la inserisco
         const clone = e.target.cloneNode(true);
         selectedBox.appendChild(clone);
 
-        // se fai doppio click sull'immagine della casella → svuota
-        clone.addEventListener("dblclick", () => {
+        // click destro sull'immagine della casella → svuota
+        clone.addEventListener("contextmenu", (ev) => {
+          ev.preventDefault();
           selectedBox.innerHTML = "";
         });
       }
