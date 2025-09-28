@@ -16,9 +16,7 @@
       <input id="search" type="search" placeholder="Cerca..." />
       <button id="shuffle" type="button">Mescola</button>
       <button id="reset" type="button">Reset</button>
-      <label>
-        <input id="toggele-names" type="checkbox" /> Nascondi nomi
-      </label>
+      <label><input id="toggele-names" type="checkbox" /> Nascondi nomi</label>
     </div>
   </header>
 
@@ -30,14 +28,21 @@
     <small>Click = oscura / RClic = ripristina</small>
   </footer>
 
-
   <script src="script.js"></script>
 
- 
+
   <script>
-    const bgMusic = document.getElementById("bgMusic");
-    bgMusic.volume = 0.3; 
-    bgMusic.play().catch(err => console.error("Errore nel play:", err));
+    document.addEventListener("DOMContentLoaded", () => {
+      const bgMusic = document.getElementById("bgMusic");
+      bgMusic.volume = 0.3;
+
+      bgMusic.play().catch(err => {
+        console.warn("Autoplay bloccato, servirà un click:", err);
+        document.addEventListener("click", () => {
+          bgMusic.play();
+        }, { once: true });
+      });
+    });
   </script>
 </body>
 </html>
