@@ -83,6 +83,11 @@ const CHARACTERS = [
   { name: "Noobini Pizzanini", img: "img/Noobini Pizzanini.jpg" },
   { name: "Tartaruga Cisterna", img: "img/Tartaruga Cisterna.jpg" },
   { name: "Tang Tang Kelentang", img: "img/Tang Tang Kelentang.webp" },
+  { name: "Bananita Dolfinita", img: "img/Bananita Dolfinita.webp" },
+  { name: "Bandito Axolotito", img: "img/Bandito Axolotito.webp" },
+  { name: "Crostini Bambini", img: "img/Crostini Bambini.jpg" },
+  { name: "Malame Amarele", img: "img/Malame Amarele.webp" },
+  { name: "Trulimero Trulicina", img: "img/Trulimero Trulicina.jpg" },
   // aggiungi/rimuovi qui (nome e percorso immagine)
 ];
 
