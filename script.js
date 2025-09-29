@@ -100,7 +100,7 @@ const CHARACTERS = [
   { name: "Rhino Toasterino", img: "img/Rhino Toasterino.webp" },
   { name: "Horror Trallallero", img: "img/Horror Trallallero.jpg" },
   { name: "Extinct Lucertola Bombardiera", img: "img/Extinct Lucertola Bombardiera.png" },
-  { name: "Extinct Boneca Ambalabu", img: "img/Extinct Boneba Ambalabu.png" },
+  { name: "Extinct Boneca Ambalabu", img: "img/Extinct Boneca Ambalabu.png" },
   { name: "Extinct Burbaloni Luliloli", img: "img/Extinct Burbaloni Luliloli.png" },
   { name: "Extinct Chucaracha", img: "img/Extinct Chucaracha.png" },
   { name: "Extinct Torrtughinni Dragonfrutinni", img: "img/Extinct Torrtughinni Dragonfrutinni.png" },
