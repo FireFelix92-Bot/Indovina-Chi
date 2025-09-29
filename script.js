@@ -92,6 +92,18 @@ const CHARACTERS = [
   { name: "Topinello Fruttarello", img: "img/Topinello Fruttarello.png" },
   { name: "Signore Carapace", img: "img/Signore Carapace.png" },
   { name: "Centuzzarella Croccantini", img: "img/Centuzzarella Croccantini.png" },
+  { name: "Turbilino Tribulina", img: "img/Turbilino Tribulina.jpg" },
+  { name: "Spaghettini Serpentini", img: "img/Spaghettini Serpentini.jpg" },
+  { name: "Serpentita Bananita", img: "img/Serpentita Bananita.jpg" },
+  { name: "Lucertola Bombardiera", img: "img/Lucertola Bombardiera.webp" },
+  { name: "Triki Traka Telas", img: "img/Triki Traka Telas.webp" },
+  { name: "Rhino Toasterino", img: "img/Rhino Toasterino.webp" },
+  { name: "Horror Trallallero", img: "img/Horror Trallallero.jpg" },
+  { name: "Extinct Lucertola Bombardiera", img: "img/Extinct Lucertola Bombardiera.png" },
+  { name: "Extinct Boneca Ambalabu", img: "img/Extinct Boneba Ambalabu.png" },
+  { name: "Extinct Burbaloni Luliloli", img: "img/Extinct Burbaloni Luliloli.png" },
+  { name: "Extinct Chucaracha", img: "img/Extinct Chucaracha.png" },
+  { name: "Extinct Torrtughinni Dragonfrutinni", img: "img/Extinct Torrtughinni Dragonfrutinni.png" },
   // aggiungi/rimuovi qui (nome e percorso immagine)
 ];
 
