@@ -92,7 +92,6 @@ const CHARACTERS = [
   { name: "Topinello Fruttarello", img: "img/Topinello Fruttarello.png" },
   { name: "Signore Carapace", img: "img/Signore Carapace.png" },
   { name: "Centuzzarella Croccantini", img: "img/Centuzzarella Croccantini.png" },
-  { name: "Turbilino Tribulina", img: "img/Turbilino Tribulina.jpg" },
   { name: "Spaghettini Serpentini", img: "img/Spaghettini Serpentini.jpg" },
   { name: "Serpentita Bananita", img: "img/Serpentita Bananita.jpg" },
   { name: "Lucertola Bombardiera", img: "img/Lucertola Bombardiera.webp" },
