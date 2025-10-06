@@ -103,6 +103,22 @@ const CHARACTERS = [
   { name: "Extinct Burbaloni Luliloli", img: "img/Extinct Burbaloni Luliloli.png" },
   { name: "Extinct Chucaracha", img: "img/Extinct Chucaracha.png" },
   { name: "Extinct Torrtughinni Dragonfrutinni", img: "img/Extinct Torrtughinni Dragonfrutinni.png" },
+  { name: "Los 67", img: "img/Los 67.png" },
+  { name: "Los Bros", img: "img/Los Bros.jfif" },
+  { name: "Los noo my Hotspot", img: "img/Los noo my Hotspot.png" },
+  { name: "Las Sis", img: "img/Las Sis.png" },
+  { name: "Las Cappuccinas", img: "img/Las Cappuccinas.png" },
+  { name: "Los Hotspotsitos", img: "img/Los Hotspotsitos.png" },
+  { name: "Yes my exams", img: "img/Yes my exams.png" },
+  { name: "Unclito Samito", img: "img/Unclito Samito.png" },
+  { name: "Bombardini Tortini", img: "img/Bombardini Tortini.png" },
+  { name: "Graipuss Medussi", img: "img/Graipuss Medussi.png" },
+  { name: "Perochello Lemonchello", img: "img/Perochello Lemonchello.png" },
+  { name: "Mangolini Parroccini", img: "img/Mangolini Parroccini.png" },
+  { name: "Mariachi Corazoni", img: "img/Mariachi Corazoni.png" },
+  { name: "Noo my exams", img: "img/Noo my exams.png" },
+  { name: "Sammyni Spiderini", img: "img/Sammyni Spiderini.png" },
+  { name: "Squalanana", img: "img/Squalanana.png" },
   // aggiungi/rimuovi qui (nome e percorso immagine)
 ];
 
