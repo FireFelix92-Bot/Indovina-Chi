@@ -121,6 +121,12 @@ const CHARACTERS = [
   { name: "Squalanana", img: "img/Squalanana.png" },
   { name: "Spooky Trallallero", img: "img/Spooky Trallallero.jfif" },
   { name: "Vulturino Skeletono", img: "img/Vulturino Skeletono.webp" },
+  { name: "La Spooky Combinazione", img: "img/La Spooky Combinazione.jpg" },
+  { name: "Los Spookaleritos", img: "img/Los Spookaleritos.png" },
+  { name: "Horror Ballerina", img: "img/Horror Ballerina.png" },
+  { name: "Halloweeno Camelino", img: "img/Halloweeno Camelino.png" },
+  { name: "Elefanto Zucchetta", img: "img/Elefanto Zucchetta.png" },
+  { name: "Horror Examen", img: "img/Horro Examen.png" },
   // aggiungi/rimuovi qui (nome e percorso immagine)
 ];
 
