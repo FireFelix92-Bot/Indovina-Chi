@@ -108,17 +108,25 @@ main {
   bottom: 8px;
   left: 50%;
   transform: translateX(-50%);
-  background: none;                
-  color: #ffffff;                  
+  background: none;
+  color: #ffffff;
   font-weight: 800;
   font-size: 14px;
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  width: 90%;
   padding: 0;
   border: none;
   border-radius: 0;
-  width: 90%;                      
-  pointer-events: none;            
+  pointer-events: none;
+
+  -webkit-text-stroke: 1px black; 
+
+  text-shadow:
+    1px 1px 0 black,
+    -1px 1px 0 black,
+    1px -1px 0 black,
+    -1px -1px 0 black,
+    2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
 
 .card.off::after {
