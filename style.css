@@ -77,13 +77,22 @@ main {
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.15s, box-shadow 0.15s;
+
+  border: 2px solid rgba(0, 200, 255, 0.6);
+  box-shadow:
+    0 0 10px rgba(0, 200, 255, 0.5),
+    0 0 20px rgba(0, 200, 255, 0.4),
+    0 0 40px rgba(0, 200, 255, 0.3);
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow:
+    0 0 15px rgba(0, 255, 255, 0.8),
+    0 0 30px rgba(0, 255, 255, 0.6),
+    0 0 50px rgba(0, 255, 255, 0.4);
 }
 
 .card:focus-visible {
@@ -93,7 +102,7 @@ main {
 
 .thumb {
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
   transition: filter 0.3s ease;
