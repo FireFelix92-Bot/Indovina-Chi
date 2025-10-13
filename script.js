@@ -119,6 +119,8 @@ const CHARACTERS = [
   { name: "Noo my exams", img: "img/Noo my exams.png" },
   { name: "Sammyni Spiderini", img: "img/Sammyni Spiderini.png" },
   { name: "Squalanana", img: "img/Squalanana.png" },
+  { name: "Spooky Trallallero", img: "img/Spooky Trallallero.jfif" },
+  { name: "Vulturino Skeletono", img: "img/Vulturino Skeletono.webp" },
   // aggiungi/rimuovi qui (nome e percorso immagine)
 ];
 
