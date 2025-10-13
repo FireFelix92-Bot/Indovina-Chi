@@ -105,15 +105,20 @@ main {
 
 .label {
   position: absolute;
-  left: 8px;
   bottom: 8px;
-  background: transparent;      
-  color: #ffffff;               
-  padding: 4px 8px;
-  border-radius: 0;             
-  font-size: 13px;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.6); 
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;                
+  color: #ffffff;                  
+  font-weight: 800;
+  font-size: 14px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  width: 90%;                      
+  pointer-events: none;            
 }
 
 .card.off::after {
