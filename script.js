@@ -131,6 +131,7 @@ const CHARACTERS = [
   { name: "Pirata Spettruccio Marino", img: "img/Pirata Spettruccio Marino.png" },
   { name: "Gufo Maledetto", img: "img/Gufo Maledetto.png" },
   { name: "Contessa Serpente", img: "img/Contessa Serpente.png" },
+  { name: "Zombie Shark", img: "img/Martello Zombie.png" },
   // aggiungi/rimuovi qui (nome e percorso immagine)
 ];
 
