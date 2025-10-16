@@ -127,6 +127,10 @@ const CHARACTERS = [
   { name: "Halloweeno Camelino", img: "img/Halloweeno Camelino.png" },
   { name: "Elefanto Zucchetta", img: "img/Elefanto Zucchetta.png" },
   { name: "Horror Examen", img: "img/Horro Examen.png" },
+  { name: "Magician Skelelupo", img: "img/Magician Skelelupo.jpg" },
+  { name: "Pirata Spettruccio Marino", img: "img/Pirata Spettruccio Marino.png" },
+  { name: "Gufo Maledetto", img: "img/Gufo Maledetto.png" },
+  { name: "Contessa Serpente", img: "img/Contessa Serpente.png" },
   // aggiungi/rimuovi qui (nome e percorso immagine)
 ];
 
